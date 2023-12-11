@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\User;
-use App\Http\Controllers\UserControler;
+use App\Models\Produto;
+use App\Http\Controllers\ProdutoControler;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +20,5 @@ Route::get('/', function () {
 });
 
 
-Route::resource('usuario', UserControler::class);
+//Route::resource('usuario', UserControler::class);
+Route::resource('produto', ProdutoControler::class);
